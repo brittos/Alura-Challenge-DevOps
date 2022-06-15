@@ -15,7 +15,7 @@ Levantando o container utilizando a imagem criada na etapa dois e [hospedada no 
     nerdctl compose up -d
     kubectl apply -f pod.yaml
 
-A aplicação estará disponível através da porta **8000**, logo você poderá acessar através do endereço: ``http://localhost:8000``.
+A aplicação estará disponível através da porta **8000**, logo você poderá acessar através do endereço: ``http://localhost:8000`` ou ``http://localhost:8000/swagger/``
 
 Para interagir com a aplicação através da linha de comando:
   
