@@ -14,7 +14,7 @@ ENV PYTHONUNBUFFERED 1
 # install dependencies
 RUN pip install --upgrade pip 
 
-COPY . /usr/src/app
+COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8000
