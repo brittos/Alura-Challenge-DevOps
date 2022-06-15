@@ -13,12 +13,14 @@ Etapas:
 Levantando o container utilizando a imagem criada na etapa dois e [hospedada no Docker Hub](https://hub.docker.com/r/britto/aluraflix) na etapa quatro:
 
     nerdctl compose up -d
+    kubectl apply -f pod.yaml
 
 A aplicação estará disponível através da porta **8000**, logo você poderá acessar através do endereço: ``http://localhost:8000``.
 
 Para interagir com a aplicação através da linha de comando:
   
     nerdctl exec -it aluraflix-app sh
+    kubectl exec -it aluraflix-pod sh
     
 ### Rancher Desktop
 
